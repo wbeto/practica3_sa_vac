@@ -1,0 +1,50 @@
+hola hola
+Restaurante/recibir_p: quiero carne al horno|7 av 4-53
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4
+2023-06-11 11:58:22 - /repartidor/recibir_p: quiero carne al horno|7 av 4-53
+2023-06-11 12:10:16 - /repartidor/recibir_p: 2354123453425345
+2023-06-11 12:11:18 | repartidor -> Codigo:2354123453425345 pedido entregado
+2023-06-11 12:24:44 - Restaurante/recibir_p: quiero carne al horno|7 av 4-53| Codigo generado: 96862cd9-5da7-4d9b-9a0b-29e4075bee04
+2023-06-11 12:24:54 - /repartidor/recibir_p: 96862cd9-5da7-4d9b-9a0b-29e4075bee04
+2023-06-11 12:25:02 | repartidor -> Codigo:96862cd9-5da7-4d9b-9a0b-29e4075bee04 pedido entregado
+cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+2023-06-11 12:26:38 - Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4| Codigo generado: 5b3f2665-cb3d-430c-935b-15e4168b61a1
+2023-06-11 12:26:48 - /repartidor/recibir_p: 5b3f2665-cb3d-430c-935b-15e4168b61a1
+2023-06-11 12:26:56 - repartidor -> Codigo:5b3f2665-cb3d-430c-935b-15e4168b61a1 pedido entregado
+2023-06-11 14:39:27 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 14:39:33 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 14:45:04 - cliente/verificarOrdenRep: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 14:45:10 - cliente/verificarOrdenRep: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 14:45:14 - cliente/verificarOrdenRep: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden entregada
+2023-06-11 14:53:07 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 14:56:04 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 14:57:48 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 14:59:49 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 15:03:40 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 15:04:21 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:04:19 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:06:45 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:07:40 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 15:08:12 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 15:08:10 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 15:09:09 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden en proceso
+2023-06-11 15:09:06 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:10:07 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:10:05 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:11:07 - /restaurante/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:11:05 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
+2023-06-11 15:17:02 - /repartidor/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden entregada
+2023-06-11 15:17:00 - cliente/verificarOrdenRep: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden entregada
