@@ -27,9 +27,9 @@ def solicitar_p():
         form_data = {
             'texto': timestamp + ' - cliente/solicitar_p: ' + pedido + '|' + direccion
         }
-        response_log = requests.post('http://localhost:5000/logs/save', data=form_data)
+        response_log = requests.post('http://localhost:8000/ESB/save', data=form_data)
         
-        response = requests.post('http://localhost:4000/restaurante/recibir_p', data=request.form)
+        response = requests.post('http://localhost:8000/ESB/recibirPedidoC', data=request.form)
         print(response.status_code)
         if response.status_code != 200:
             response = jsonify({'message': 'Pedido enviado pero restaurante no activo', 'status': 200})
@@ -51,13 +51,13 @@ def verificar():
         now = datetime.datetime.now()
         timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
        
-        response = requests.post('http://localhost:4000/restaurante/estadoPedido', data=request.form)
+        response = requests.post('http://localhost:8000/ESB/estadoPedidoRestaurante', data=request.form)
         json = response.json()
         #elemento = response.json().message
         form_data = {
             'texto': timestamp + ' - cliente/verificarOrdenRes: ' + 'Codigo: ' + codigo + ' - ' + json.get('message') 
         }
-        response_log = requests.post('http://localhost:5000/logs/save', data=form_data)
+        response_log = requests.post('http://localhost:8000/ESB/save', data=form_data)
         
         response = jsonify({'message': json.get('message') , 'status': 200})
         response.status_code = 200
@@ -74,13 +74,13 @@ def verificarRep():
     if codigo:
         now = datetime.datetime.now()
         timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
-        response = requests.post('http://localhost:6000/repartidor/estadoPedido', data=request.form)
+        response = requests.post('http://localhost:8000/ESB/estadoPedidoRepartidor', data=request.form)
         json = response.json()
         elemento = json.get('message')
         form_data = {
             'texto': timestamp + ' - cliente/verificarOrdenRep: ' + 'Codigo: ' + codigo + ' - ' + elemento 
         }
-        response_log = requests.post('http://localhost:5000/logs/save', data=form_data)
+        response_log = requests.post('http://localhost:8000/ESB/save', data=form_data)
         
         response = jsonify({'message': elemento, 'status': 200})
         response.status_code = 200

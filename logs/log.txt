@@ -48,3 +48,6 @@ cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
 2023-06-11 15:11:05 - cliente/verificarOrdenRes: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden despachada
 2023-06-11 15:17:02 - /repartidor/estadoPedido: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden entregada
 2023-06-11 15:17:00 - cliente/verificarOrdenRep: Codigo: 5b3f2665-cb3d-430c-935b-15e4168b61a1 - Orden entregada
+2023-06-12 23:17:57 - cliente/solicitar_p: quiero un mar y tierra |7 av 4-53 zona 4
+2023-06-12 23:18:06 - Restaurante/recibir_p: quiero un mar y tierra |7 av 4-53 zona 4| Codigo generado: 02c9d02a-a4b3-4ece-b179-9df624c2b89b
+2023-06-12 23:18:20 - /repartidor/estadoPedido: Codigo: 02c9d02a-a4b3-4ece-b179-9df624c2b89b - Orden en proceso

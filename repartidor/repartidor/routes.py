@@ -22,7 +22,7 @@ def temporizador(tiempo_en_minutos,codigo):
     form_data = {
         'texto': timestamp + ' - repartidor -> Codigo:' + codigo + ' pedido entregado'
     }
-    response_log = requests.post('http://localhost:5000/logs/save', data=form_data)
+    response_log = requests.post('http://localhost:8000/ESB/save', data=form_data)
     print("¡El temporizador ha terminado!")
 
 @user.route('/repartidor/recibir_p', methods=['POST'])
@@ -34,7 +34,7 @@ def guardar_log():
         form_data = {
             'texto': timestamp + ' - /repartidor/recibir_p: ' + codigo
         }
-        response_log = requests.post('http://localhost:5000/logs/save', data=form_data)
+        response_log = requests.post('http://localhost:8000/ESB/save', data=form_data)
         
         t = threading.Thread(target=temporizador, args=(0.1,codigo,))
         t.start()
@@ -57,7 +57,7 @@ def estadoPedido():
         form_data = {
             'texto': timestamp + ' - /repartidor/estadoPedido: ' + 'Codigo: ' + codigo + ' - ' + elemento 
         }
-        response_log = requests.post('http://localhost:5000/logs/save', data=form_data)
+        response_log = requests.post('http://localhost:8000/ESB/save', data=form_data)
         
         response = jsonify({'message': elemento, 'status': 200})
         response.status_code = 200
